@@ -62,20 +62,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(57, 38);
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(134, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 30);
+            this.label2.Size = new System.Drawing.Size(163, 27);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Välkommen till Black Jack spelet";
+            this.label2.Text = "Välkommen till ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(148, 84);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(224, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 21);
+            this.label3.Size = new System.Drawing.Size(185, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Välja Ett Alternativ";
             // 
@@ -113,49 +113,58 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(178, 126);
+            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button1.Location = new System.Drawing.Point(256, 303);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 31);
+            this.button1.Size = new System.Drawing.Size(134, 38);
             this.button1.TabIndex = 8;
-            this.button1.Text = "1. Spela 21:an";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Spela 21:an";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(178, 163);
+            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button2.Location = new System.Drawing.Point(256, 335);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 38);
+            this.button2.Size = new System.Drawing.Size(134, 38);
             this.button2.TabIndex = 9;
-            this.button2.Text = "2. Visa Senaste Vinnaren";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "Visa Senaste Vinnaren";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(178, 207);
+            this.button3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button3.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button3.Location = new System.Drawing.Point(256, 366);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 44);
+            this.button3.Size = new System.Drawing.Size(134, 38);
             this.button3.TabIndex = 10;
-            this.button3.Text = "3. Spelets Regler";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Text = "Spelets Regler";
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(178, 257);
+            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button4.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button4.Location = new System.Drawing.Point(256, 401);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 45);
+            this.button4.Size = new System.Drawing.Size(134, 38);
             this.button4.TabIndex = 11;
-            this.button4.Text = "4. Avsluta Spelet";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Text = "Avsluta Spelet";
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 375);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(634, 457);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

@@ -5,8 +5,7 @@ namespace Naser_21_Projekt
 
     {
 
-        int vinnare;
-
+        string senasteVinnare = "";
 
         public Form1()
         {
@@ -92,6 +91,7 @@ namespace Naser_21_Projekt
                         if (k > o)
                         {
                             MessageBox.Show("Datorn gick över gränsen för maxantal poäng, du vann", "Du vann", MessageBoxButtons.OK, MessageBoxIcon.None);
+                            senasteVinnare = "Spelaren";
                             w = 0;
                             break;
 
@@ -99,7 +99,7 @@ namespace Naser_21_Projekt
                         else if (k > j)
                         {
                             MessageBox.Show("Datorn fick mer poäng än dig, du förlorade", "Du förlorade", MessageBoxButtons.OK, MessageBoxIcon.None);
-
+                            senasteVinnare = "Datorn";
                             w = 0;
                             break;
 
@@ -117,6 +117,7 @@ namespace Naser_21_Projekt
                             if (k > o)
                             {
                                 MessageBox.Show("Datorn gick över gränsen för maxantal poäng, du vann", "Du vann", MessageBoxButtons.OK, MessageBoxIcon.None);
+                                senasteVinnare = "Spelaren";
                                 w = 0;
                                 break;
 
@@ -124,7 +125,7 @@ namespace Naser_21_Projekt
                             else if (k > j)
                             {
                                 MessageBox.Show("Datorn fick mer poäng än dig, du förlorade", "Du förlorade", MessageBoxButtons.OK, MessageBoxIcon.None);
-
+                                senasteVinnare = "Datorn";
                                 w = 0;
                                 break; 
 
@@ -142,7 +143,14 @@ namespace Naser_21_Projekt
         private void button2_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Senaste vinnare är ", "Senaste vinnare", MessageBoxButtons.OK, MessageBoxIcon.None);
+          if (!string.IsNullOrEmpty(senasteVinnare))
+            {
+                MessageBox.Show("Senaste vinnare är " + senasteVinnare, "Senaste vinnare", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+          else
+            {
+                MessageBox.Show("Ingen senaste vinnare hittade ", "Ingen vinnare", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
 
         }
     } 
